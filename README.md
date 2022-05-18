@@ -1,1 +1,1 @@
-# device_xiaomi_spes-TWRP
+## Device Configs for TWRP Xiaomi Redmi 10C

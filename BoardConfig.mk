@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/xiaomi/spes
+DEVICE_PATH := device/xiaomi/fog
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -23,7 +23,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 
 # Assertation
-TARGET_OTA_ASSERT_DEVICE := spes,spesn
+TARGET_OTA_ASSERT_DEVICE := fog,rain,wind
 
 # A/B
 AB_OTA_UPDATER := true
@@ -89,8 +89,8 @@ BOARD_KERNEL_CMDLINE += swiotlb=2048
 TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := vendor/bengal_defconfig
-TARGET_KERNEL_HEADERS := kernel/xiaomi/spes
-TARGET_KERNEL_SOURCE := kernel/xiaomi/spes
+TARGET_KERNEL_HEADERS := kernel/xiaomi/fog
+TARGET_KERNEL_SOURCE := kernel/xiaomi/fog
 
 # Metadata
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false

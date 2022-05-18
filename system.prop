@@ -1,5 +1,5 @@
-ro.display.series=Redmi Note 11
-ro.product.board=spes
+ro.display.series=Redmi 10C
+ro.product.board=fog
 ro.board.platform=bengal
 sys.usb.controller=4e00000.dwc3
 sys.usb.rndis.func.name=rndis_bam

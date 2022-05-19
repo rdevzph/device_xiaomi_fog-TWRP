@@ -94,7 +94,6 @@ PLATFORM_VERSION_LAST_STABLE := $(PLATFORM_VERSION)
 BOARD_USES_QCOM_FBE_DECRYPTION := true
 
 TARGET_RECOVERY_DEVICE_MODULES += \
-    libandroidicu \
     libion \
     libqtivibratoreffect \
     libxml2 \
@@ -144,8 +143,5 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/libqtivibratoreffect.so \
     $(TARGET_OUT_VENDOR_SHARED_LIBRARIES)/vendor.qti.hardware.vibrator.impl.so
-
-PRODUCT_COPY_FILES += \
-    $(OUT_DIR)/target/product/fog/obj/SHARED_LIBRARIES/libandroidicu_intermediates/libandroidicu.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libandroidicu.so
 
 ENABLE_VIRTUAL_AB := true

@@ -96,7 +96,6 @@ BOARD_USES_QCOM_FBE_DECRYPTION := true
 TARGET_RECOVERY_DEVICE_MODULES += \
     libandroidicu \
     libion \
-    libdisplayconfig.qti \
     libqtivibratoreffect \
     libxml2 \
     vendor.display.config@1.0 \
@@ -137,7 +136,6 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SHARED_LIBRARIES)/libxml2
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/libdisplayconfig.qti.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@1.0.so \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/vendor.display.config@2.0.so
 

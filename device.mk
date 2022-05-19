@@ -98,6 +98,7 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     libion \
     libdisplayconfig.qti \
     libqtivibratoreffect \
+    libxml2 \
     vendor.display.config@1.0 \
     vendor.display.config@2.0 \
     vendor.qti.hardware.vibrator.service \
@@ -132,7 +133,8 @@ RECOVERY_BINARY_SOURCE_FILES += \
     $(TARGET_OUT_VENDOR_EXECUTABLES)/hw/vendor.qti.hardware.vibrator.service
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so
+    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2
 
 RECOVERY_LIBRARY_SOURCE_FILES += \
     $(TARGET_OUT_SYSTEM_EXT_SHARED_LIBRARIES)/libdisplayconfig.qti.so \
